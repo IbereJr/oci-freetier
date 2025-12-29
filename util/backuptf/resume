@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cat $1 | jq -S -r '[.data.items[]] | sort_by(."display-name")'

@@ -1,0 +1,302 @@
+{
+  "data": {
+    "items": [
+      {
+        "additional-details": {},
+        "availability-domain": null,
+        "compartment-id": "ocid1.tenancy.oc1..aaaaaaaahuiyndqknyfap3zqeg6653svsxv7hyh52oihi5y5mztxlhfoztza",
+        "defined-tags": {
+          "Oracle-Tags": {
+            "CreatedBy": "default/ibere@tizio.com.br",
+            "CreatedOn": "2025-12-24T22:57:29.317Z"
+          }
+        },
+        "display-name": "Limite_Gastos",
+        "freeform-tags": {},
+        "identifier": "ocid1.budget.oc1.sa-vinhedo-1.amaaaaaau5mmyiaaebrdzyoxzjkhtgrbpcqeusswzbaa6mzeigdzd6fanuta",
+        "identity-context": {},
+        "lifecycle-state": "ACTIVE",
+        "resource-type": "Budget",
+        "search-context": null,
+        "system-tags": {},
+        "time-created": "2025-12-24T22:57:29.717000+00:00"
+      },
+      {
+        "additional-details": {},
+        "availability-domain": null,
+        "compartment-id": "ocid1.tenancy.oc1..aaaaaaaahuiyndqknyfap3zqeg6653svsxv7hyh52oihi5y5mztxlhfoztza",
+        "defined-tags": {
+          "Oracle-Tags": {
+            "CreatedBy": "default/ibere@tizio.com.br",
+            "CreatedOn": "2025-12-20T14:38:42.608Z"
+          }
+        },
+        "display-name": "VNPA-Tenancy-Policy",
+        "freeform-tags": {},
+        "identifier": "ocid1.policy.oc1..aaaaaaaahpl4b4ho3575krt6g5du4uptxfkerptmiy6353rbb2wwhqlwuqsa",
+        "identity-context": {},
+        "lifecycle-state": "ACTIVE",
+        "resource-type": "Policy",
+        "search-context": null,
+        "system-tags": {},
+        "time-created": "2025-12-20T14:38:42.652000+00:00"
+      },
+      {
+        "additional-details": {},
+        "availability-domain": null,
+        "compartment-id": "ocid1.compartment.oc1..aaaaaaaannct6novmzbj6jisye6wc46chyel4bh7kn73y5qfafdzsjfxi2nq",
+        "defined-tags": {
+          "Oracle-Tags": {
+            "CreatedBy": "default/ibere@tizio.com.br",
+            "CreatedOn": "2025-12-20T13:23:35.671Z"
+          }
+        },
+        "display-name": "",
+        "freeform-tags": {},
+        "identifier": "ocid1.onssubscription.oc1.sa-vinhedo-1.aaaaaaaarpibmf3f2f6jbozgev7yq66tlm3xulivjwbckbmapz26cz542ixq",
+        "identity-context": {
+          "etag": "9fb48f2c",
+          "protocol": "EMAIL",
+          "subscriptionPolicy": "{\"maxReceiveRatePerSecond\":0,\"backoffRetryPolicy\":{\"initialDelayInFailureRetry\":60000,\"maxRetryDuration\":7200000,\"policyType\":\"EXPONENTIAL\"}}",
+          "timeUpdated": "2025-12-20T13:23:35.708Z",
+          "topicId": "ocid1.onstopic.oc1.sa-vinhedo-1.amaaaaaau5mmyiaaombzpemcdtjtuu7u3gd5gbc54oi34qiap6ilv7w5kppa"
+        },
+        "lifecycle-state": "PENDING",
+        "resource-type": "OnsSubscription",
+        "search-context": null,
+        "system-tags": {},
+        "time-created": "2025-12-20T13:23:35.708000+00:00"
+      },
+      {
+        "additional-details": {},
+        "availability-domain": null,
+        "compartment-id": "ocid1.tenancy.oc1..aaaaaaaahuiyndqknyfap3zqeg6653svsxv7hyh52oihi5y5mztxlhfoztza",
+        "defined-tags": {
+          "Oracle-Tags": {
+            "CreatedBy": "default/ibere@tizio.com.br",
+            "CreatedOn": "2025-12-11T20:59:00.987Z"
+          }
+        },
+        "display-name": "meow",
+        "freeform-tags": {},
+        "identifier": "ocid1.compartment.oc1..aaaaaaaannct6novmzbj6jisye6wc46chyel4bh7kn73y5qfafdzsjfxi2nq",
+        "identity-context": {},
+        "lifecycle-state": "ACTIVE",
+        "resource-type": "Compartment",
+        "search-context": null,
+        "system-tags": {},
+        "time-created": "2025-12-11T20:59:01.046000+00:00"
+      },
+      {
+        "additional-details": {},
+        "availability-domain": null,
+        "compartment-id": "ocid1.tenancy.oc1..aaaaaaaahuiyndqknyfap3zqeg6653svsxv7hyh52oihi5y5mztxlhfoztza",
+        "defined-tags": {
+          "Oracle-Tags": {
+            "CreatedBy": "default/ibere@tizio.com.br",
+            "CreatedOn": "2025-12-05T01:11:14.637Z"
+          }
+        },
+        "display-name": "VPNIPSecOCI-Home_read",
+        "freeform-tags": {},
+        "identifier": "ocid1.log.oc1.sa-vinhedo-1.amaaaaaau5mmyiaa6pt5khiozxapooi6qien5xsi7sijtvmlw5l64htrdkma",
+        "identity-context": {
+          "logGroupId": "ocid1.loggroup.oc1.sa-vinhedo-1.amaaaaaau5mmyiaarzgbvj23vwqtol5oemsylnpav5lzlwk5iy4utyq5r6va"
+        },
+        "lifecycle-state": "ACTIVE",
+        "resource-type": "Log",
+        "search-context": null,
+        "system-tags": {},
+        "time-created": "2025-12-05T01:11:14.681000+00:00"
+      },
+      {
+        "additional-details": {},
+        "availability-domain": null,
+        "compartment-id": "ocid1.tenancy.oc1..aaaaaaaahuiyndqknyfap3zqeg6653svsxv7hyh52oihi5y5mztxlhfoztza",
+        "defined-tags": {
+          "Oracle-Tags": {
+            "CreatedBy": "default/ibere@tizio.com.br",
+            "CreatedOn": "2025-12-05T01:11:07.887Z"
+          }
+        },
+        "display-name": "Infra",
+        "freeform-tags": {},
+        "identifier": "ocid1.loggroup.oc1.sa-vinhedo-1.amaaaaaau5mmyiaarzgbvj23vwqtol5oemsylnpav5lzlwk5iy4utyq5r6va",
+        "identity-context": {},
+        "lifecycle-state": "ACTIVE",
+        "resource-type": "LogGroup",
+        "search-context": null,
+        "system-tags": {},
+        "time-created": "2025-12-05T01:11:07.920000+00:00"
+      },
+      {
+        "additional-details": {},
+        "availability-domain": null,
+        "compartment-id": "ocid1.tenancy.oc1..aaaaaaaahuiyndqknyfap3zqeg6653svsxv7hyh52oihi5y5mztxlhfoztza",
+        "defined-tags": {},
+        "display-name": "createdon",
+        "freeform-tags": {},
+        "identifier": "ocid1.tagdefault.oc1..aaaaaaaavn3byqoeoopjnicuwlrg3vvro5eyknvdzmmswshcu4sym3ndvsxq",
+        "identity-context": {},
+        "lifecycle-state": null,
+        "resource-type": "TagDefault",
+        "search-context": null,
+        "system-tags": {},
+        "time-created": "2025-11-24T21:21:32.739000+00:00"
+      },
+      {
+        "additional-details": {},
+        "availability-domain": null,
+        "compartment-id": "ocid1.tenancy.oc1..aaaaaaaahuiyndqknyfap3zqeg6653svsxv7hyh52oihi5y5mztxlhfoztza",
+        "defined-tags": {},
+        "display-name": "createdby",
+        "freeform-tags": {},
+        "identifier": "ocid1.tagdefault.oc1..aaaaaaaaky6lilzhlmyohwv4xrvu2klzxc7tpg2ey5kj6g732gtggpsvpuna",
+        "identity-context": {},
+        "lifecycle-state": null,
+        "resource-type": "TagDefault",
+        "search-context": null,
+        "system-tags": {},
+        "time-created": "2025-11-24T21:21:32.556000+00:00"
+      },
+      {
+        "additional-details": {},
+        "availability-domain": null,
+        "compartment-id": "ocid1.tenancy.oc1..aaaaaaaahuiyndqknyfap3zqeg6653svsxv7hyh52oihi5y5mztxlhfoztza",
+        "defined-tags": {},
+        "display-name": "Oracle-Tags",
+        "freeform-tags": {},
+        "identifier": "ocid1.tagnamespace.oc1..aaaaaaaabowwbbggyedeu457ssbe7lo22qxuhjkdkftytlpqdasrcfdml23a",
+        "identity-context": {},
+        "lifecycle-state": "CREATED",
+        "resource-type": "TagNamespace",
+        "search-context": null,
+        "system-tags": {},
+        "time-created": "2025-11-24T21:21:32.444000+00:00"
+      },
+      {
+        "additional-details": {},
+        "availability-domain": null,
+        "compartment-id": "ocid1.tenancy.oc1..aaaaaaaahuiyndqknyfap3zqeg6653svsxv7hyh52oihi5y5mztxlhfoztza",
+        "defined-tags": {},
+        "display-name": "Tenant Admin Policy",
+        "freeform-tags": {},
+        "identifier": "ocid1.policy.oc1..aaaaaaaamdcfhn75kcmws3tlgc7vbguuwb2fnjwn7qgtrsyd5sposkms6syq",
+        "identity-context": {},
+        "lifecycle-state": "ACTIVE",
+        "resource-type": "Policy",
+        "search-context": null,
+        "system-tags": {},
+        "time-created": "2025-11-24T21:21:18.566000+00:00"
+      },
+      {
+        "additional-details": {},
+        "availability-domain": null,
+        "compartment-id": "ocid1.tenancy.oc1..aaaaaaaahuiyndqknyfap3zqeg6653svsxv7hyh52oihi5y5mztxlhfoztza",
+        "defined-tags": {},
+        "display-name": "IAM DataSafe",
+        "freeform-tags": {},
+        "identifier": "ocid1.domainapp.oc1.sa-vinhedo-1.amaaaaaaaqtp5baamsah7fxl3wjcd3ccrbs2j4ta4g6hybpxbpqtwrtrjg4q",
+        "identity-context": {
+          "domainDisplayName": "Default",
+          "domainOcid": "ocid1.domain.oc1..aaaaaaaahw64e46mdiyrgqsdkd7pddby2nwnayxpdavwfip5jxtz4rf5snjq"
+        },
+        "lifecycle-state": null,
+        "resource-type": "App",
+        "search-context": null,
+        "system-tags": {},
+        "time-created": "2025-11-24T21:20:52.394000+00:00"
+      },
+      {
+        "additional-details": {},
+        "availability-domain": null,
+        "compartment-id": "ocid1.tenancy.oc1..aaaaaaaahuiyndqknyfap3zqeg6653svsxv7hyh52oihi5y5mztxlhfoztza",
+        "defined-tags": {},
+        "display-name": "OCI Console",
+        "freeform-tags": {},
+        "identifier": "ocid1.domainapp.oc1.sa-vinhedo-1.amaaaaaaaqtp5baai65sjs5qt62llopfdhglprb3qhnnlaru7cdh66kge4eq",
+        "identity-context": {
+          "domainDisplayName": "Default",
+          "domainOcid": "ocid1.domain.oc1..aaaaaaaahw64e46mdiyrgqsdkd7pddby2nwnayxpdavwfip5jxtz4rf5snjq"
+        },
+        "lifecycle-state": null,
+        "resource-type": "App",
+        "search-context": null,
+        "system-tags": {},
+        "time-created": "2025-11-24T21:20:52.215000+00:00"
+      },
+      {
+        "additional-details": {},
+        "availability-domain": null,
+        "compartment-id": "ocid1.tenancy.oc1..aaaaaaaahuiyndqknyfap3zqeg6653svsxv7hyh52oihi5y5mztxlhfoztza",
+        "defined-tags": {},
+        "display-name": "All Domain Users",
+        "freeform-tags": {},
+        "identifier": "ocid1.group.oc1..aaaaaaaae64p5txkupayuylamzj7jnjrbhrbb4a5h5xrsrppvktlut3fzz3a",
+        "identity-context": {
+          "domainDisplayName": "Default",
+          "domainOcid": "ocid1.domain.oc1..aaaaaaaahw64e46mdiyrgqsdkd7pddby2nwnayxpdavwfip5jxtz4rf5snjq"
+        },
+        "lifecycle-state": null,
+        "resource-type": "Group",
+        "search-context": null,
+        "system-tags": {},
+        "time-created": "2025-11-24T21:20:50.276000+00:00"
+      },
+      {
+        "additional-details": {},
+        "availability-domain": null,
+        "compartment-id": "ocid1.tenancy.oc1..aaaaaaaahuiyndqknyfap3zqeg6653svsxv7hyh52oihi5y5mztxlhfoztza",
+        "defined-tags": {},
+        "display-name": "IAM LoginClient",
+        "freeform-tags": {},
+        "identifier": "ocid1.domainapp.oc1.sa-vinhedo-1.amaaaaaahsylytyaaim6aynfs2qqamnrfbrirbswbipnceigphkxpnwwvvua",
+        "identity-context": {
+          "domainDisplayName": "Default",
+          "domainOcid": "ocid1.domain.oc1..aaaaaaaahw64e46mdiyrgqsdkd7pddby2nwnayxpdavwfip5jxtz4rf5snjq"
+        },
+        "lifecycle-state": null,
+        "resource-type": "App",
+        "search-context": null,
+        "system-tags": {},
+        "time-created": "2025-11-24T21:20:48.566000+00:00"
+      },
+      {
+        "additional-details": {},
+        "availability-domain": null,
+        "compartment-id": "ocid1.tenancy.oc1..aaaaaaaahuiyndqknyfap3zqeg6653svsxv7hyh52oihi5y5mztxlhfoztza",
+        "defined-tags": {},
+        "display-name": "ibere@tizio.com.br",
+        "freeform-tags": {},
+        "identifier": "ocid1.user.oc1..aaaaaaaatitt75zwkq5horz2jo3ami5ofq4ad23n45zqgi5oos6ss6k4etea",
+        "identity-context": {
+          "domainDisplayName": "Default",
+          "domainOcid": "ocid1.domain.oc1..aaaaaaaahw64e46mdiyrgqsdkd7pddby2nwnayxpdavwfip5jxtz4rf5snjq"
+        },
+        "lifecycle-state": null,
+        "resource-type": "User",
+        "search-context": null,
+        "system-tags": {},
+        "time-created": "2025-11-24T21:20:48.118000+00:00"
+      },
+      {
+        "additional-details": {},
+        "availability-domain": null,
+        "compartment-id": "ocid1.tenancy.oc1..aaaaaaaahuiyndqknyfap3zqeg6653svsxv7hyh52oihi5y5mztxlhfoztza",
+        "defined-tags": {},
+        "display-name": "Administrators",
+        "freeform-tags": {},
+        "identifier": "ocid1.group.oc1..aaaaaaaaixhfml3tpk7zphldwmfhgrb4fqmznndrpcnowkhgrmfrxdxqbada",
+        "identity-context": {
+          "domainDisplayName": "Default",
+          "domainOcid": "ocid1.domain.oc1..aaaaaaaahw64e46mdiyrgqsdkd7pddby2nwnayxpdavwfip5jxtz4rf5snjq"
+        },
+        "lifecycle-state": null,
+        "resource-type": "Group",
+        "search-context": null,
+        "system-tags": {},
+        "time-created": "2025-11-24T21:20:47.963000+00:00"
+      }
+    ]
+  }
+}
