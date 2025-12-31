@@ -2,7 +2,6 @@ data "oci_core_drg_route_tables" "drg_rt" {
     drg_id = var.drg_id
 }
 
-
 resource "oci_core_cpe" "cpe_house" {
   compartment_id = var.compartment_id
   display_name   = "${var.cpe_name} CPE"
@@ -13,7 +12,7 @@ resource "oci_core_ipsec" "ipsec" {
   compartment_id = var.compartment_id
   cpe_id         = oci_core_cpe.cpe_house.id
   drg_id         = var.drg_id
-  static_routes  = [var.cpe_network_cidr] # Specify the remote network routes
+  static_routes  = [var.cpe_network_cidr]
   display_name   = "SiteToSiteVPN"
   cpe_local_identifier      = var.cpe_public_ip
   cpe_local_identifier_type = "IP_ADDRESS"
@@ -62,9 +61,4 @@ resource "oci_core_ipsec_connection_tunnel_management" "onprem_ipsec_tunnel_2" {
   routing       = "STATIC"
   ike_version   = "V2"
   shared_secret = var.vpn_shared_secret
-}
-
-output "DRG_Routes" {
-   value = data.oci_core_drg_route_tables.drg_rt
-
 }

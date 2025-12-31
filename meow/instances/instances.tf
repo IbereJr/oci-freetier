@@ -9,7 +9,6 @@ data "oci_core_images" "latest_image" {
    shape = "VM.Standard.E2.1.Micro"
 }
 
-
 resource "oci_core_network_security_group" "instance_nsg" {
   compartment_id = var.compartment_id
   vcn_id         = var.vcn_id
@@ -18,7 +17,6 @@ resource "oci_core_network_security_group" "instance_nsg" {
 
 resource "oci_core_network_security_group_security_rule" "egress_all" {
   network_security_group_id = oci_core_network_security_group.instance_nsg.id
-
   direction   = "EGRESS"
   protocol    = "all"
   destination = "0.0.0.0/0"
@@ -32,7 +30,6 @@ resource "oci_core_network_security_group_security_rule" "ingress_ssh" {
   direction                 = "INGRESS"
   source                    = "0.0.0.0/0"
   stateless                 = false
-
   tcp_options {
     destination_port_range {
       min = 22
@@ -48,7 +45,6 @@ resource "oci_core_network_security_group_security_rule" "ingress_https" {
   direction                 = "INGRESS"
   source                    = "0.0.0.0/0"
   stateless                 = false
-
   tcp_options {
     destination_port_range {
       min = 443
@@ -64,7 +60,6 @@ resource "oci_core_network_security_group_security_rule" "ingress_http" {
   direction                 = "INGRESS"
   source                    = "0.0.0.0/0"
   stateless                 = false
-
   tcp_options {
     destination_port_range {
       min = 80
@@ -110,6 +105,6 @@ resource "oci_core_instance" "instance" {
 
 resource "null_resource" "atuaz_sshconfig" {
   provisioner "local-exec" {
-      command = "sudo sed -i '/${var.name}\\s+/c${oci_core_instance.instance.public_ip}\t${var.name}' /etc/hosts"
+      command = "sudo sed -i '/${var.name}$/c${oci_core_instance.instance.private_ip}\t${var.name}' /etc/hosts"
   }
 }

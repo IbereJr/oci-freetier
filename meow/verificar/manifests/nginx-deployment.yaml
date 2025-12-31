@@ -15,7 +15,7 @@ spec:
         app: nginx
     spec:
       containers:
-      - image: nginx:1.14.2
+      - image: docker.io/library/nginx:1.14.2
         name: nginx
         resources:
           limits:

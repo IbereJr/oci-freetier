@@ -12,9 +12,9 @@ terraform {
 }
 
 provider "oci" {
-  user_ocid        = var.user_id          # IAM User OCID for API authentication
+  user_ocid        = var.user_ocid        # IAM User OCID for API authentication
   fingerprint      = var.fingerprint      # API key fingerprint
   private_key_path = var.private_key_path # Path to API signing key
-  tenancy_ocid     = var.tenancy_id       # Target tenancy OCID
+  tenancy_ocid     = var.tenancy_ocid     # Target tenancy OCID
   region           = var.region           # OCI region for resource management
 }

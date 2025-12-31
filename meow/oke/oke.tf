@@ -55,5 +55,10 @@ resource "oci_containerengine_node_pool" "k8s_node_pool" {
     value = "${var.name}-cluster"
   }
 
+  initial_node_labels {
+    key   = "topology.kubernetes.io/zone"
+    value = "${ element(split(":",data.oci_identity_availability_domains.ads.availability_domains[0].name),1) }"
+  }
+
   ssh_public_key = file(var.ssh_public_key)
 }

@@ -5,14 +5,14 @@ variable "name" {
   default     = "ocid1.compartment.oc1..aaaaaaaa............"
 }
 
-variable "tenancy_id" {
+variable "tenancy_ocid" {
   description = "Tenancy OCID for your Oracle Cloud tenancy."
   type        = string
   default     = "ocid1.tenancy.oc1..aaaaaaaa............"
 }
 
 # The OCID of the IAM user for Terraform operations
-variable "user_id" {
+variable "user_ocid" {
   description = "User OCID used for managing resources in the tenancy."
   type        = string
 }

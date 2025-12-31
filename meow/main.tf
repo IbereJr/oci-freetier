@@ -58,8 +58,8 @@ module "network" {
   ig_route_id                       = module.vcn.ig_route_id
 }
 
-module "cluster" {
-  source                            = "./cluster"
+module "oke" {
+  source                            = "./oke"
   compartment_id                    = var.compartment_id
   name                              = var.name
   k8s_version                       = var.k8s_version
@@ -76,10 +76,10 @@ module "cluster" {
 
 module "loadbalancer" {
   source                            = "./loadbalancer"
-  depends_on                        = [ module.cluster, module.network, module.vcn ]
+  depends_on                        = [ module.oke, module.network, module.vcn ]
   namespace                         = var.load_balancer_name_space
   name                              = var.name
-  node_pool_id                      = module.cluster.node_pool_id
+  node_pool                         = module.oke.node_pool_list
   compartment_id                    = var.compartment_id
   public_subnet_id                  = module.network.public_subnet_id
   node_size                         = var.node_size
@@ -92,13 +92,13 @@ module "loadbalancer" {
 module "kubeconfig" {
   source                            = "./kubeconfig"
   depends_on                        = [ module.loadbalancer ]
-  cluster_id                        = module.cluster.cluster_id
+  cluster_id                        = module.oke.cluster_id
   oci_profile                       = var.oci_profile
 }
 
 module "vpn" {
   source                            = "./ipsec"
-  depends_on                        = [ module.cluster ]
+  depends_on                        = [ module.oke ]
   compartment_id                    = var.compartment_id
   name                              = var.name
   vcn_id                            = module.vcn.vcn_id 
@@ -130,7 +130,30 @@ module "instance2" {
   subnet_id                         = module.network.vcn_private_subnet_id
 }
 
+output "instance1_name" {
+  value = module.instance1.instance_name
+}
+output "instance1_ip" {
+  value = module.instance1.instance_ip
+}
+output "instance2_name" {
+  value = module.instance2.instance_name
+}
+output "instance2_ip" {
+  value = module.instance2.instance_ip
+}
 output "public_ip" {
   value = module.loadbalancer.load_balancer_public_ip
 }
+
+output "DRG_Routes" {
+   value = module.vpn.DRG_Routes
+}
+
+output "tunnels" {
+  value = module.vpn.tunnels
+}
+
+
+
 

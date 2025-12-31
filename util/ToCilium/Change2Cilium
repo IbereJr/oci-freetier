@@ -1,0 +1,26 @@
+#!/bin/bash
+
+#Atualiza Pacotes e instala tudo
+
+echo deb [signed-by=/usr/share/keyrings/helm.gpg] https://packages.buildkite.com/helm-linux/helm-debian/any/ any main | sudo tee /etc/apt/sources.list.d/helm-stable-debian.list
+sudo apt  update -y
+sudo apt  install -y curl vim wireguard gpg apt-transport-https helm
+curl -fsSL https://packages.buildkite.com/helm-linux/helm-debian/gpgkey | gpg --dearmor | sudo tee /usr/share/keyrings/helm.gpg >/dev/null
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+chmod 755 kubectl
+sudo mv kubectl /usr/local/bin
+curl -o install.sh https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh
+bash ./install.sh --accept-all-defaults --update-path-and-enable-tab-completion --rc-file-path $HOME/.bashrc
+
+oci ce cluster create-kubeconfig --cluster-id ${var.cluster_id} --file $HOME/.kube/config --region ${var.region}
+chmod 600 $HOME/.kube/config
+helm repo add cilium https://helm.cilium.io/
+
+export VERSION=v0.18.9
+#curl -L --fail --remote-name-all https://github.com/cilium/cilium-cli/releases/download/$VERSION/cilium-linux-amd64.tar.gz
+#sudo tar xzvf cilium-linux-amd64.tar.gz -C /usr/local/bin
+#helm install cilium cilium/cilium --namespace=kube-system -f cilium.yaml
+#sleep 10 && kubectl -n kube-system delete ds kube-flannel-ds
+#sleep 6 && kubectl -n kube-system delete pod -l k8s-app=clustermesh-apiserver
+#sleep 2 && kubectl -n kube-system delete pod -l k8s-app=hubble-relay
+#sleep 1 && kubectl -n kube-system delete pod -l k8s-app=hubble-ui
